@@ -45,7 +45,7 @@
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
             SignUp as Member
           </button>
-          
+          {% csrf_token %}
         </form>
       </div>
 
@@ -64,6 +64,7 @@
       </div>
       <div class="modal-body">
         <form action="/signup" method="post">
+          {% csrf_token %}
           <div class="mb-3">
             <label for="username" class="form-label">create username</label>
             <input type="username" class="form-control" id="username" name="username" placeholder="enter username" required>
