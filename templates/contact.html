@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+{% csrf_token %}
+{% block body %}
+ 
+<div class="container-fluid"><span class="redbg"><img src="/static/img/img11.jpg" class="rounded h-12" alt="subhash meena"></span>
+    
+    <h6 class="text-center">Subhash Meena</h6>
+    <span class="placeholder col-12 bg-danger"></span>
+
+    <h1 class="text-center">Contact us</h1>
+</div>
+<form method="POST" action="/contact">
+  {% csrf_token %}
+<div class="container py-4"><div class="row">
+    <div class="col-4">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="name" aria-label="name">
+    </div>
+    <div class="col-4">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile number" aria-label="Last name">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="email">
+      </div>
+      <div class="mb-3">
+        <label for="content" class="form-label">Write Us</label>
+        <textarea class="form-control" id="content" name="content" rows="2"></textarea>
+      </div>
+      
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+
+</div>
+</form>
+<footer class="text-center">
+    <a href="http://https://www.linkedin.com/in/subhash-meena-35248aa5/" target="blank"><img width="31" src="/static/img/IN1.png" alt="Icon"></a>
+    <a href="http://https://www.gmail.com/subhash14meena@gmail.com" target="blank"><img width="31" src="/static/img/R.png" alt="Icon"></a>
+</footer>
+{% endblock body %}

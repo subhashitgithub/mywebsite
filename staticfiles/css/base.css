@@ -1,0 +1,61 @@
+
+.rounded {
+    border-radius: 2.5rem!important;
+    align-items: center;
+    margin: 14px auto;
+    display: block;
+    width: 100px;
+}
+
+#about a {
+    min-width: 30vmax;
+    margin: 0.5rem;
+}
+#text223 p{
+    font-size: xx-large;
+    font-family: cursive;
+    color: rgb(47, 28, 124);
+    font-weight: bold;
+    background-color: aquamarine;
+    background-image: url(/static/img/img123.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    left: 585px;
+    top: 554px;
+    width: 750px;
+    height: 560px;
+    right: 30px;
+
+border: 4px solid black;
+border-radius: 7px;
+box-shadow: -7px -5px 10px 34px pink;
+
+}
+body {
+    background-color: blueviolet;
+}
+#sd22 {
+    border: 3px solid black;
+    border-radius: 11px;
+    position: relative;
+    left: 73px;
+    box-shadow: 43px 23px rgb(223, 143, 170);
+}
+
+
+#vx2 {
+    position: absolute;
+    left: 540px;
+    top: 1185px;
+}
+
+#vx3 {
+    position: absolute;
+    left: 988px;
+    top: 1185px;
+}
+#xx22 {
+    position: absolute;
+    left: 400px;
+}

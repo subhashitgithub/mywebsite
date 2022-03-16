@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Blog{% endblock title %}
+{% block blogactive %} active {% endblock blogactive %}
+{% csrf_token %}
+{% block body %}
+<div class="text-center text-dark" >
+    <h4>
+        HAVE A GOOD READ
+    </h4>
+</div>
+<div class="card bg-dark text-primary">
+    <img src="/static/img/imgblog.png" class="card-img" alt="subhash">
+    <div class="card-img-overlay">
+      <h1 class="text-center">Hello, I'm Subhash</h1>
+      <p class="text-info"><h4>Blogging for bloggers
+        Article shared by Subhash
+        A blog (a contraction of the term weblog) is a type of website. It is usually maintained by an individual and will have regular entries of commentary, descriptions of events, or other material such as graphics or video. Entries are commonly displayed in reverse-chronological order.
+        
+        
+        The word “blogging” means maintaining or adding content to a blog. People blog for many reasons. Blogs may provide commentary or news on a particular subject while others are like personal online diaries. In most cases, a blog includes text, images, and links to other blogs, Web pages, and other media related to its topic. Most blogs have an interactive format to leave comments.
+        
+        Some blogs may focus on art (art log), photographs (photo blog), sketches (sketch blog), videos (v log), music (MP3 blog), and audio (podcasting). Micro blogging is another type of blogging. It features blogs with very short posts.</h4></p>
+      <p class="text-center text-danger">Last updated 3 days ago</p>
+    </div>
+  </div>
+
+{% endblock body %}

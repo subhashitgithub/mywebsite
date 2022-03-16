@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock title %}
+{% block aboutactive %} active {% endblock aboutactive %}
+{% csrf_token %}
+{% block body %}
+
+<div class="container-fluid " ><span class=""><img src="/static/img/img11.jpg" class="rounded h-12" alt="subhash meena"></span>
+<h5 class="text-center">Subhash Meena</h5>
+<p class="placeholder-glow">
+    <span class="placeholder col-12"></span>
+  </p>
+  
+  <p class="placeholder-wave">
+    <span class="placeholder col-12"></span>
+  </p>
+  
+<p class="text-center">
+  
+    <strong>Subhash Meena is Goal oriented and passionate Python coder, who has a good command in Python, HTML, CSS. Also, he is a creative graphic designer and enthusiastic techie. For more information, you can contact me via mail and social media.</strong>
+</p>
+<footer class="text-center">
+  <a href="http://https://www.linkedin.com/in/subhash-meena-35248aa5/" target="blank"><img width="31" src="/static/img/IN1.png" alt="Icon"></a>
+  <a href="http://https://www.gmail.com/subhash14meena@gmail.com" target="blank"><img width="31" src="/static/img/R.png" alt="Icon"></a>
+  <br>
+  <br>
+  <a href="#" target="blank"><img width="31" src="/static/img/whatsapp-logo-1.png" alt="Icon"> <p>9713208008</p></a>
+</footer>
+
+<br>
+<div class="text-center">
+  <button href="/contact" type="submit" class="btn btn-success">Contact Us</button>
+</div>
+{% endblock body %}
